@@ -11,8 +11,8 @@ body:
       placeholder: |
         1. [task-ticket](issue-link): <summary of accomplishment>
         2. [T001](https://github.com/issue-link-here): implemented tasks succesfully. Awaiting PR review
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: in-progress
     attributes:
@@ -21,8 +21,8 @@ body:
       placeholder: |
         1. [task-ticket](issue-link): <summary of work done>
         2. [T002](https://github.com/issue-link-here): Partially implemented test.
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: blockers
     attributes:
@@ -31,5 +31,5 @@ body:
       placeholder: |
         1. [task-ticket](issue-link): <summary of issue>
         2. [T003](https://github.com/issue-link-here): Test requires missing features from developer team.
-      validations:
-        required: true
+    validations:
+      required: true
