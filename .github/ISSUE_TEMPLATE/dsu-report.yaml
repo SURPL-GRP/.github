@@ -9,8 +9,10 @@ body:
       label: Tasks Finished
       description: What tasks did you finish yesterday?
       placeholder: |
-        1. [task-ticket](issue-link): <summary of accomplishment>
-        2. [T001](https://github.com/issue-link-here): implemented tasks succesfully. Awaiting PR review
+        1. issue-link:
+        - <summary of accomplishment>
+        2. https://github.com/issue-link-here: 
+        - implemented tasks succesfully. Awaiting PR review
     validations:
       required: true
   - type: textarea
@@ -19,8 +21,10 @@ body:
       label: Tasks In-progress
       description: What tasks are ongoing?
       placeholder: |
-        1. [task-ticket](issue-link): <summary of work done>
-        2. [T002](https://github.com/issue-link-here): Partially implemented test.
+        1. <issue-link>: 
+        - <summary of work done>
+        2. https://github.com/issue-link-here: 
+        - Partially implemented test.
     validations:
       required: true
   - type: textarea
@@ -29,7 +33,7 @@ body:
       label: Task Blockers
       description: What's preventing you from finishing the tasks?
       placeholder: |
-        1. [task-ticket](issue-link): <summary of issue>
-        2. [T003](https://github.com/issue-link-here): Test requires missing features from developer team.
+        [ ] <issue-link>: <summary of issue>
+        [ ] https://github.com/issue-link-here: Test requires missing features from developer team.
     validations:
       required: true
