@@ -1,0 +1,42 @@
+name: Ticket Submission Form
+description: Guided Ticket Submission form
+title: "<TICKET_NUMBER>: <Title>"
+body: 
+  - type: textarea
+    id: ticket 
+    attributes:
+      label: Ticket Description
+      value: |
+        # Task Description
+        This is the description of the task. This will contain a general overview of what needs to be accomplished for the ticket.
+
+        # Objectives
+        - [ ] Objective 1
+        - [ ] Objective 2
+        - [ ] Objective 3
+
+        # Specification (Below is an example of an endpoint feature)
+        ## Endpoint: /endpoint-name
+        ## Request Body:
+          ```json
+          {
+              “key”: “value”
+          }
+          ```
+        ## Response:
+        - Success:
+          - 200
+          - 201
+        - Error:
+          - 401
+
+        # Files and Directories
+        Folder/
+        - File1.ts
+        - File2.ts
+        - file3.ts
+
+        # Notes
+        - This will contain meta specifications if needed.
+    validations:
+      required: true
