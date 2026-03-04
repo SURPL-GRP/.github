@@ -1,0 +1,34 @@
+name: Test Proposal Form
+description: Guided Test Proposal form
+title: "Test Proposal for <ticket-id>"
+labels: ["test-proposal"]
+body: 
+  - type: textarea
+    id: ticket 
+    attributes:
+      label: Test Proposal
+      value: |
+        ## Test Proposal
+        **Feature:** \<feature-ticket-link>
+
+        ---
+
+        #### Test: \<test-title>
+        **Type:** \<unit/integration>
+        **Description:**
+        \<test-description-and-rationale>
+        **Objective:**
+        \<test-objective>
+
+        ---
+
+        #### Test: \<test-title>
+        **Type:** \<unit/integration>
+        **Description:**
+        \<test-description-and-rationale>
+        **Objective:**
+        \<test-objective>
+
+        ---
+    validations:
+      required: true
